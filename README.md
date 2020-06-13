@@ -57,10 +57,34 @@ faces = faceCascade.detectMultiScale(
     )
 ```
 
-`faces = faceCascade.detectMultiScale`detecting related object
-`gray,` gray scale
-`scaleFactor=1.1,` scale the face
-`minNeighbors=5,` number of objects
-`minSize=(30, 30),` window size
+`faces = faceCascade.detectMultiScale`detecting related object  
+`gray,` gray scale  
+`scaleFactor=1.1,` scale the face  
+`minNeighbors=5,` number of objects  
+`minSize=(30, 30),` window size  
+
+Drawing the rectangle around the detacted face.
+
+``` python
+for (x, y, w, h) in faces:
+ cv2.rectangle(frame, (x, y), (x+w, y+h), (0, 255, 0), 2)
+ ```
+ 
+ Displaying the results
+ ``` python
+ cv2.imshow('Video', frame)
+```
+Adding command to stop running the program
+``` python
+    if cv2.waitKey(1) & 0xFF == ord('q'):
+        break
+```
+waiting to `q` key to pressed to exit.
+
+When everything is done, release the capture
+``` python
+video_capture.release()
+cv2.destroyAllWindows()
+```
 
 
