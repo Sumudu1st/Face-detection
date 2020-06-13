@@ -11,7 +11,7 @@ You will need,
 
 <img src="Annotation 2020-06-13 150404.jpg">
 
-<h6> Code Explanation </h>  
+##### Code Explanation
 
 
 `import` can load the modules into the current namespace so that you can access the functions and anything else defined within the module using the module name.
