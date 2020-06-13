@@ -13,6 +13,7 @@ You will need,
 
 <h6> Code Explanation </h>  
 
+
 `import` can load the modules into the current namespace so that you can access the functions and anything else defined within the module using the module name.
 
 ``` python
