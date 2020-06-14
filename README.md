@@ -3,11 +3,11 @@ Detect human face with live feeds from Webcam.
 
 You will need,
 
- PyCharm IDE
+ PyCharm IDE 2018.2
 
- OpenCV
+ OpenCV-python 3.2.0.8
 
- Python 
+ Python 3.6
 
 <img src="Annotation 2020-06-13 150404.jpg">
 
